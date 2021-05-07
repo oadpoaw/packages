@@ -63,7 +63,7 @@ jobs:
       - run: tar -xvf build.tar.gz
       - run: tar -xvf array-chunk.tar.gz
       - run: |
-          echo "[name].tar.gz" >> .npmignore
+          echo "array-chunk.tar.gz" >> .npmignore
           echo "build.tar.gz" >> .npmignore
           echo "checksum.txt" >> .npmignore
           echo "CHANGELOG.md" >> .npmignore
