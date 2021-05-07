@@ -1,5 +1,4 @@
 import createLogger from '../src';
-import winston from 'winston';
 
 test('Should not throw any errors', () => {
     expect(() => {
