@@ -12,6 +12,7 @@
 [![npm](https://img.shields.io/npm/v/@oadpoaw/async-wrapper?color=blue&logo=npm&style=flat-square&label=@oadpoaw/async-wrapper)](https://www.npmjs.com/package/@oadpoaw/async-wrapper)
 [![npm](https://img.shields.io/npm/v/@oadpoaw/base64?color=blue&logo=npm&style=flat-square&label=@oadpoaw/base64)](https://www.npmjs.com/package/@oadpoaw/base64)
 [![npm](https://img.shields.io/npm/v/@oadpoaw/differentiate?color=blue&logo=npm&style=flat-square&label=@oadpoaw/differentiate)](https://www.npmjs.com/package/@oadpoaw/differentiate)
+[![npm](https://img.shields.io/npm/v/@oadpoaw/escapes?color=blue&logo=npm&style=flat-square&label=@oadpoaw/escapes)](https://www.npmjs.com/package/@oadpoaw/escapes)
 
 
 </div>

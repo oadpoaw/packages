@@ -1,0 +1,58 @@
+name: Release - escapes
+
+on:
+  push:
+    tags:
+      - "@oadpoaw/escapes@*.*.*"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 14.x
+
+      - run: npm ci
+
+      - run: npm run lint
+      - run: npm run test:ci
+      - run: npm run bootstrap
+
+      - run: npm run build
+        working-directory: ./packages/escapes
+
+      - run: tar -cvzf build.tar.gz package.json dist README.md CHANGELOG.md
+        working-directory: ./packages/escapes
+
+      - uses: actions/upload-artifact@v2
+        with:
+          name: builds
+          path: ./packages/escapes/build.tar.gz
+
+  release:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 14.x
+          registry-url: https://registry.npmjs.org/
+
+      - uses: actions/download-artifact@v2
+        with:
+          name: builds
+
+      - run: tar -xvf build.tar.gz
+      - run: echo build.tar.gz >> .npmignore
+
+      - run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - uses: softprops/action-gh-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          files: CHANGELOG.md
