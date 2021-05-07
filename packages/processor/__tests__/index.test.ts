@@ -11,3 +11,7 @@ test('Should throw an error', () => {
         processor(console);
     }).toThrow(Error);
 });
+
+test('Run bloated coverage', () => {
+    process.emit('warning', new Error('bloated'));
+});
