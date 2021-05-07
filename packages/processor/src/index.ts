@@ -12,18 +12,18 @@ export default function processor(logger: Logger) {
         );
 
     process.on('uncaughtException', (err) => {
-        /* istanbul ignore next */ 
+        /* istanbul ignore next */
         logger.error(err);
         process.exit(1);
     });
 
     process.on('warning', (err) => {
-        /* istanbul ignore next */ 
+        /* istanbul ignore next */
         logger.warn(err);
     });
 
     process.on('unhandledRejection', (reason) => {
-        /* istanbul ignore next */ 
+        /* istanbul ignore next */
         logger.error(reason);
     });
 
