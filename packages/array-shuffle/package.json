@@ -1,0 +1,29 @@
+{
+    "$schema": "http://json.schemastore.org/package",
+    "name": "@oadpoaw/array-shuffle",
+    "version": "1.0.0",
+    "description": "",
+    "license": "Apache-2.0",
+    "scripts": {
+        "clean": "rimraf -rf dist",
+        "build": "tsc --project tsconfig.json",
+        "test": "npm run build"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/oadpoaw/oadpoaw/packages.git"
+    },
+    "bugs": {
+        "url": "https://github.com/oadpoaw/oadpoaw/packages/issues"
+    },
+    "homepage": "https://github.com/oadpoaw/oadpoaw/packages/tree/main/packages/array-shuffle#readme",
+    "keywords": [],
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "engines": {
+        "node": ">=14.0.0"
+    },
+    "publishConfig": {
+        "access": "public"  
+    }
+}
