@@ -1,7 +1,7 @@
 {
     "$schema": "http://json.schemastore.org/package",
     "name": "@oadpoaw/array-chunk",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "description": "Fast and Minimalist Array Chunking",
     "license": "Apache-2.0",
     "scripts": {
