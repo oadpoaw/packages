@@ -7,7 +7,7 @@ test('Random Matcher', () => {
 
 test('Padding Matcher', () => {
     const padding = Math.floor(Math.random() * 100);
-    expect(ProgressBar(50, padding).length).toEqual(padding);
+    expect(ProgressBar(50, padding).length).toStrictEqual(padding);
 });
 
 test('Block Matcher', () => {
@@ -41,6 +41,7 @@ test('Randomize Matching with defaults', () => {
     const percent = Math.floor(Math.random() * 100);
     const padding = Math.floor(Math.random() * 100);
     const progressbar = ProgressBar(percent, padding, null, null);
+    expect(progressbar.length).toStrictEqual(padding);
     expect(progressbar).toContain(defaults.block);
     expect(progressbar).toContain(defaults.padBlock);
 });
