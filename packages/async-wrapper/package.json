@@ -1,0 +1,35 @@
+{
+    "$schema": "http://json.schemastore.org/package",
+    "name": "@oadpoaw/async-wrapper",
+    "version": "1.0.0",
+    "description": "Asynchronous Wrapper for Express Middlewares",
+    "license": "Apache-2.0",
+    "scripts": {
+        "clean": "rimraf dist",
+        "build": "tsc --project tsconfig.json",
+        "test": "echo \"Run tests from root\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/oadpoaw/packages.git"
+    },
+    "bugs": {
+        "url": "https://github.com/oadpoaw/packages/issues"
+    },
+    "homepage": "https://github.com/oadpoaw/packages/tree/main/packages/async-wrapper#readme",
+    "keywords": [],
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "engines": {
+        "node": ">=14.0.0"
+    },
+    "publishConfig": {
+        "access": "public"
+    },
+    "peerDependencies": {
+        "express": "^4.17.1"
+    },
+    "devDependencies": {
+        "@types/express": "^4.17.11"
+    }
+}
