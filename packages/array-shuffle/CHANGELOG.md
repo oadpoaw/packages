@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.5](https://github.com/oadpoaw/packages/compare/@oadpoaw/array-shuffle@1.1.4...@oadpoaw/array-shuffle@1.1.5) (2021-05-07)
+
+
+### Bug Fixes
+
+* incorrect github links ([152d6b8](https://github.com/oadpoaw/packages/commit/152d6b839d18f42b9250cf8b0b4967c3080ae4a3))
+
+
+
+
+
 ## [1.1.4](http://github.com/oadpoaw/oadpoaw/packages/compare/@oadpoaw/array-shuffle@1.1.3...@oadpoaw/array-shuffle@1.1.4) (2021-05-07)
 
 **Note:** Version bump only for package @oadpoaw/array-shuffle
