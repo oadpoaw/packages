@@ -8,8 +8,9 @@ test('Instantiating class should throw an error', () => {
 
 test('Should not throw any errors', () => {
     expect(() => {
-        Escapes.regex("123123][[];';l./,12");
+        const str = Escapes.regex("123123][[];';l./,12");
         Escapes.addressSign('@@,pdafdsaufh @@@');
         Escapes.backticks('akjf`j`kj`khh`h`');
+        new RegExp(str);
     }).not.toThrow();
 });
