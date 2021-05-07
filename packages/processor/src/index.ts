@@ -1,4 +1,4 @@
-interface Logger {
+export interface Logger {
     error: (err: any) => any;
     warn: (err: any) => any;
 }
@@ -22,6 +22,7 @@ export default function processor(logger: Logger) {
 
     process.on('unhandledRejection', (reason) => {
         logger.error(reason);
+        process.exit(1);
     });
 
     hasBeenCalled = true;
