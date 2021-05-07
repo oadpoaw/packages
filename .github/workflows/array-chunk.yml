@@ -45,9 +45,7 @@ jobs:
           name: builds
 
       - run: tar -xvf build.tar.gz
-      - run: |
-          echo build.tar.gz >> .npmignore
-          echo CHANGELOG.md >> .npmignore
+      - run: echo build.tar.gz >> .npmignore
 
       - run: npm publish
         env:
