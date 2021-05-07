@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.2](http://github.com/oadpoaw/oadpoaw/packages/compare/@oadpoaw/array-chunk@1.1.1...@oadpoaw/array-chunk@1.1.2) (2021-05-07)
+
+
+### Bug Fixes
+
+* **scripts:** remove `-rf` flag for `clean` script ([e89287f](http://github.com/oadpoaw/oadpoaw/packages/commit/e89287f5af8087942a8ecaf25ac8ca9b34b71f31))
+
+
+
+
+
 ## [1.1.1](http://github.com/oadpoaw/oadpoaw/packages/compare/@oadpoaw/array-chunk@1.1.0...@oadpoaw/array-chunk@1.1.1) (2021-05-07)
 
 
