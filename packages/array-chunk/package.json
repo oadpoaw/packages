@@ -2,12 +2,12 @@
     "$schema": "http://json.schemastore.org/package",
     "name": "@oadpoaw/array-chunk",
     "version": "1.0.0",
-    "description": "",
+    "description": "Minimalist array chunking",
     "license": "Apache-2.0",
     "scripts": {
         "clean": "rimraf -rf dist",
         "build": "tsc --project tsconfig.json",
-        "test": "npm run build"
+        "test": "echo \"Run tests from root\" && exit 1"
     },
     "repository": {
         "type": "git",
