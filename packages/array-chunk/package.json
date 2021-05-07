@@ -11,12 +11,12 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/oadpoaw/oadpoaw/packages.git"
+        "url": "git+https://github.com/oadpoaw/packages.git"
     },
     "bugs": {
-        "url": "https://github.com/oadpoaw/oadpoaw/packages/issues"
+        "url": "https://github.com/oadpoaw/packages/issues"
     },
-    "homepage": "https://github.com/oadpoaw/oadpoaw/packages/tree/main/packages/array-chunk#readme",
+    "homepage": "https://github.com/oadpoaw/packages/tree/main/packages/array-chunk#readme",
     "keywords": [],
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
