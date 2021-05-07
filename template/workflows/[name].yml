@@ -15,6 +15,7 @@ jobs:
           node-version: 14.x
 
       - run: npm ci
+
       - run: npm run lint
       - run: npm run test:ci
       - run: npm run bootstrap
@@ -22,7 +23,7 @@ jobs:
       - run: npm run build
         working-directory: ./packages/[name]
 
-      - run: tar -cvzf [name].tar.gz package.json dist
+      - run: tar -cvzf [name].tar.gz package.json dist README.md
         working-directory: ./packages/[name]
 
       - working-directory: ./packages/[name]
@@ -33,11 +34,10 @@ jobs:
       - run: tar -cvzf build.tar.gz [name].tar.gz CHANGELOG.md checksum.txt
         working-directory: ./packages/[name]
 
-      - working-directory: ./packages/[name]
-        uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v2
         with:
           name: builds
-          path: build.tar.gz
+          path: ./packages/[name]/build.tar.gz
 
   release:
     needs: build
@@ -62,7 +62,7 @@ jobs:
             CHANGELOG.md
 
       - run: tar -xvf build.tar.gz
-      - run: rm -rf [name].tar.gz checksum.txt CHANGELOG.md
+      - run: rm -rf [name].tar.gz checksum.txt CHANGELOG.md build.tar.gz
 
       - run: npm publish
         env:
