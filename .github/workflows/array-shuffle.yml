@@ -3,7 +3,7 @@ name: Release - array-shuffle
 on:
   push:
     tags:
-      - "array-shuffle@v*.*.*"
+      - "@oadpoaw/array-shuffle@v*.*.*"
 
 jobs:
   build:

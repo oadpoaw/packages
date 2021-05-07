@@ -3,7 +3,7 @@ name: Release - array-chunk
 on:
   push:
     tags:
-      - "array-chunk@v*.*.*"
+      - "@oadpoaw/array-chunk@v*.*.*"
 
 jobs:
   build:
