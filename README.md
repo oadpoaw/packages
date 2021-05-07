@@ -2,7 +2,7 @@
 
 **My Cool Node.js Packages**
 
-[![GitHub](https://img.shields.io/github/license/oadpoaw/packages)](https://github.com/oadpoaw/packages/blob/main/LICENSE.md)
+[![GitHub](https://img.shields.io/github/license/oadpoaw/packages)](https://github.com/oadpoaw/packages/tree/main/LICENSE)
 [![codecov](https://codecov.io/gh/oadpoaw/packages/branch/main/graph/badge.svg?token=L3OD02UDO6)](https://codecov.io/gh/oadpoaw/packages)
 
 **Packages**
