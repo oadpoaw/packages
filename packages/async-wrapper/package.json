@@ -1,7 +1,7 @@
 {
     "$schema": "http://json.schemastore.org/package",
     "name": "@oadpoaw/async-wrapper",
-    "version": "1.1.1",
+    "version": "1.1.2",
     "description": "Asynchronous Wrapper for Express Middlewares",
     "license": "Apache-2.0",
     "scripts": {
