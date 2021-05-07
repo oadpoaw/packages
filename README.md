@@ -16,6 +16,7 @@
 [![npm](https://img.shields.io/npm/v/@oadpoaw/logger?color=blue&logo=npm&style=flat-square&label=@oadpoaw/logger)](https://www.npmjs.com/package/@oadpoaw/logger)
 [![npm](https://img.shields.io/npm/v/@oadpoaw/processor?color=blue&logo=npm&style=flat-square&label=@oadpoaw/processor)](https://www.npmjs.com/package/@oadpoaw/processor)
 [![npm](https://img.shields.io/npm/v/@oadpoaw/progressbar?color=blue&logo=npm&style=flat-square&label=@oadpoaw/progressbar)](https://www.npmjs.com/package/@oadpoaw/progressbar)
+[![npm](https://img.shields.io/npm/v/@oadpoaw/random?color=blue&logo=npm&style=flat-square&label=@oadpoaw/random)](https://www.npmjs.com/package/@oadpoaw/random)
 
 
 </div>
