@@ -62,6 +62,7 @@ jobs:
             CHANGELOG.md
 
       - run: tar -xvf build.tar.gz
+      - run: tar -xvf [name].tar.gz
       - run: rm -rf [name].tar.gz checksum.txt CHANGELOG.md build.tar.gz
 
       - run: npm publish

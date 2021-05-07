@@ -61,6 +61,7 @@ jobs:
             CHANGELOG.md
 
       - run: tar -xvf build.tar.gz
+      - run: tar -xvf array-chunk.tar.gz
       - run: rm -rf array-chunk.tar.gz checksum.txt CHANGELOG.md build.tar.gz
 
       - run: npm publish
