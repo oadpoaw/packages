@@ -5,7 +5,7 @@
     "bootstrap": "lerna bootstrap",
     "clean": "lerna run clean",
     "build": "lerna run build",
-    "test": "jest",
+    "test": "jest --collect-coverage",
     "test:ci": "jest --verbose --ci --no-stack-trace --collect-coverage",
     "format": "prettier --write \"packages/**/*.{ts,tsx}\"",
     "lint": "prettier --check \"packages/**/*.{ts,tsx}\"",
