@@ -8,7 +8,7 @@
     "test:ci": "jest --verbose --ci --no-stack-trace --collect-coverage",
     "format": "prettier --write \"packages/**/*.{ts,tsx}\"",
     "lint": "prettier --check \"packages/**/*.{ts,tsx}\"",
-    "bump": "lerna version --conventional-commits --yes -m \"chore(release): publish %v\""
+    "bump": "lerna version --conventional-commits --yes -m \"chore(release): publish\""
   },
   "repository": {
     "type": "git",
