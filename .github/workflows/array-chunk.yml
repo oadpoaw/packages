@@ -15,6 +15,7 @@ jobs:
           node-version: 14.x
 
       - run: npm ci
+
       - run: npm run lint
       - run: npm run test:ci
       - run: npm run bootstrap
@@ -22,15 +23,7 @@ jobs:
       - run: npm run build
         working-directory: ./packages/array-chunk
 
-      - run: tar -cvzf array-chunk.tar.gz package.json dist README.md
-        working-directory: ./packages/array-chunk
-
-      - working-directory: ./packages/array-chunk
-        run: |
-          SUM=`sha256sum array-chunk.tar.gz`
-          echo $SUM > checksum.txt
-
-      - run: tar -cvzf build.tar.gz array-chunk.tar.gz CHANGELOG.md checksum.txt
+      - run: tar -cvzf build.tar.gz package.json dist README.md CHANGELOG.md
         working-directory: ./packages/array-chunk
 
       - uses: actions/upload-artifact@v2
@@ -51,23 +44,17 @@ jobs:
         with:
           name: builds
 
-      - uses: softprops/action-gh-release@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          files: |
-            array-chunk.tar.gz
-            checksum.txt
-            CHANGELOG.md
-
       - run: tar -xvf build.tar.gz
-      - run: tar -xvf array-chunk.tar.gz
       - run: |
-          echo "array-chunk.tar.gz" >> .npmignore
-          echo "build.tar.gz" >> .npmignore
-          echo "checksum.txt" >> .npmignore
-          echo "CHANGELOG.md" >> .npmignore
+          echo build.tar.gz >> .npmignore
+          echo CHANGELOG.md >> .npmignore
 
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - uses: softprops/action-gh-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          files: CHANGELOG.md

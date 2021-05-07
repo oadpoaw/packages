@@ -15,6 +15,7 @@ jobs:
           node-version: 14.x
 
       - run: npm ci
+
       - run: npm run lint
       - run: npm run test:ci
       - run: npm run bootstrap
@@ -22,15 +23,7 @@ jobs:
       - run: npm run build
         working-directory: ./packages/array-shuffle
 
-      - run: tar -cvzf array-shuffle.tar.gz package.json dist README.md
-        working-directory: ./packages/array-shuffle
-
-      - working-directory: ./packages/array-shuffle
-        run: |
-          SUM=`sha256sum array-shuffle.tar.gz`
-          echo $SUM > checksum.txt
-
-      - run: tar -cvzf build.tar.gz array-shuffle.tar.gz CHANGELOG.md checksum.txt
+      - run: tar -cvzf build.tar.gz package.json dist README.md CHANGELOG.md
         working-directory: ./packages/array-shuffle
 
       - uses: actions/upload-artifact@v2
@@ -51,23 +44,17 @@ jobs:
         with:
           name: builds
 
-      - uses: softprops/action-gh-release@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          files: |
-            array-shuffle.tar.gz
-            checksum.txt
-            CHANGELOG.md
-
       - run: tar -xvf build.tar.gz
-      - run: tar -xvf array-shuffle.tar.gz
       - run: |
-          echo "array-shuffle.tar.gz" >> .npmignore
-          echo "build.tar.gz" >> .npmignore
-          echo "checksum.txt" >> .npmignore
-          echo "CHANGELOG.md" >> .npmignore
+          echo build.tar.gz >> .npmignore
+          echo CHANGELOG.md >> .npmignore
 
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - uses: softprops/action-gh-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          files: CHANGELOG.md
