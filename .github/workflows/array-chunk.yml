@@ -1,0 +1,68 @@
+name: Release - array-chunk
+
+on:
+  push:
+    tags:
+      - "array-chunk@v*.*.*"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 14.x
+
+      - run: npm ci
+      - run: npm run lint
+      - run: npm run test:ci
+      - run: npm run bootstrap
+
+      - run: npm run build
+        working-directory: ./packages/array-chunk
+
+      - run: tar -cvzf array-chunk.tar.gz package.json dist README.md
+        working-directory: ./packages/array-chunk
+
+      - working-directory: ./packages/array-chunk
+        run: |
+          SUM=`sha256sum array-chunk.tar.gz`
+          echo $SUM > checksum.txt
+
+      - run: tar -cvzf build.tar.gz array-chunk.tar.gz CHANGELOG.md checksum.txt
+        working-directory: ./packages/array-chunk
+
+      - uses: actions/upload-artifact@v2
+        with:
+          name: builds
+          path: ./packages/array-chunk/build.tar.gz
+
+  release:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 14.x
+          registry-url: https://registry.npmjs.org/
+
+      - uses: actions/download-artifact@v2
+        with:
+          name: builds
+
+      - uses: softprops/action-gh-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          files: |
+            array-chunk.tar.gz
+            checksum.txt
+            CHANGELOG.md
+
+      - run: tar -xvf build.tar.gz
+      - run: rm -rf array-chunk.tar.gz checksum.txt CHANGELOG.md build.tar.gz
+
+      - run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
