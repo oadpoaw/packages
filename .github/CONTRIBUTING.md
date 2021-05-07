@@ -20,11 +20,11 @@ submit a pull request.
 - Follow the [Commit Convention][commit convention].
 - Download and use the VSCode Extension [Commitizen](commitizen)
 
-### SloshDB Project Concept Guidelines
+### oadpoaw Project Concept Guidelines
 
 There are a number of guidelines considered when reviewing Pull Requests to be merged. _This is by no means an exhaustive list, but here are some things to consider before/while submitting your ideas._
 
--   Everything in SloshDB Project should be generally useful for the majority of users. Don't let that stop you if you've got a good concept though, as your idea still might be a great addition.
+-   Everything in oadpoaw Project should be generally useful for the majority of users. Don't let that stop you if you've got a good concept though, as your idea still might be a great addition.
 -   Everything should follow [OOP paradigms][oop paradigms] and generally rely on behaviour over state where possible. This generally helps methods be predictable, keeps the codebase simple and understandable, reduces code duplication through abstraction, and leads to efficiency and therefore scalability.
 
 <!-- Link Dump -->
@@ -39,5 +39,5 @@ There are a number of guidelines considered when reviewing Pull Requests to be m
 [commit convention]: https://www.conventionalcommits.org/en/v1.0.0/
 [discord server]: https://discord.gg/HG8s98Uk
 [node.js]: https://nodejs.org/en/download/
-[here]: https://github.com/oadpoaw/sloshdb.js/pulls
+[here]: https://github.com/oadpoaw/oadpoaw/pulls
 [oop paradigms]: https://en.wikipedia.org/wiki/Object-oriented_programming
