@@ -2,5 +2,5 @@
 Fast and Minimalist Array Chunking
 
 ```sh
-$ npm install @oadpoaw/array-chunk
+npm install @oadpoaw/array-chunk
 ```

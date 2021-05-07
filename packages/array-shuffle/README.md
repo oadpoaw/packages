@@ -2,5 +2,5 @@
 Fast and Minimalist Array Shuffling
 
 ```sh
-$ npm install @oadpoaw/array-shuffle
+npm install @oadpoaw/array-shuffle
 ```
