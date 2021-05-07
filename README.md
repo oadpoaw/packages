@@ -13,6 +13,7 @@
 [![npm](https://img.shields.io/npm/v/@oadpoaw/base64?color=blue&logo=npm&style=flat-square&label=@oadpoaw/base64)](https://www.npmjs.com/package/@oadpoaw/base64)
 [![npm](https://img.shields.io/npm/v/@oadpoaw/differentiate?color=blue&logo=npm&style=flat-square&label=@oadpoaw/differentiate)](https://www.npmjs.com/package/@oadpoaw/differentiate)
 [![npm](https://img.shields.io/npm/v/@oadpoaw/escapes?color=blue&logo=npm&style=flat-square&label=@oadpoaw/escapes)](https://www.npmjs.com/package/@oadpoaw/escapes)
+[![npm](https://img.shields.io/npm/v/@oadpoaw/logger?color=blue&logo=npm&style=flat-square&label=@oadpoaw/logger)](https://www.npmjs.com/package/@oadpoaw/logger)
 
 
 </div>
