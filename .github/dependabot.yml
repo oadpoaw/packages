@@ -19,3 +19,13 @@ updates:
       prefix: chore
     reviewers:
       - oadpoaw
+
+  - package-ecosystem: npm
+    directory: "/packages/base64"
+    schedule:
+      interval: daily
+    commit-message:
+      include: scope
+      prefix: chore
+    reviewers:
+      - oadpoaw
