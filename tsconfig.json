@@ -1,0 +1,16 @@
+{
+    "$schema": "https://json.schemastore.org/tsconfig",
+    "compilerOptions": {
+        "moduleResolution": "Node",
+        "module": "commonjs",
+        "target": "esnext",
+        "noImplicitAny": true,
+        "sourceMap": true,
+        "pretty": false,
+        "declaration": true,
+        "esModuleInterop": true,
+        "resolveJsonModule": false,
+        "allowUnreachableCode": false,
+        "allowUnusedLabels": false
+    }
+}

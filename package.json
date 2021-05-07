@@ -1,0 +1,41 @@
+{
+  "private": true,
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "clean": "lerna run clean",
+    "build": "lerna run build",
+    "test": "jest --collect-coverage",
+    "test:ci": "jest --verbose --ci --no-stack-trace --collect-coverage",
+    "format": "prettier --write \"packages/**/*.{ts,tsx}\"",
+    "lint": "prettier --check \"packages/**/*.{ts,tsx}\"",
+    "bump": "lerna version --conventional-commits --yes -m \"chore(release): publish %v\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oadpoaw/packages.git"
+  },
+  "author": "oadpoaw",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/oadpoaw/packages/issues"
+  },
+  "homepage": "https://github.com/oadpoaw/packages#readme",
+  "devDependencies": {
+    "@babel/core": "^7.11.4",
+    "@babel/plugin-proposal-decorators": "^7.10.5",
+    "@babel/preset-env": "^7.11.0",
+    "@babel/preset-typescript": "^7.10.4",
+    "@types/jest": "^26.0.10",
+    "babel-jest": "^26.3.0",
+    "babel-plugin-transform-typescript-metadata": "^0.3.0",
+    "jest": "^26.4.2",
+    "lerna": "^4.0.0",
+    "prettier": "^2.2.1",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.2.4"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "name": "oadpoaw"
+}

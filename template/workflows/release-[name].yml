@@ -1,0 +1,69 @@
+name: Release - [name]
+
+on:
+  push:
+    tags:
+      - "[name]@v*.*.*"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 14.x
+
+      - run: npm ci
+      - run: npm run lint
+      - run: npm run test:ci
+      - run: npm run bootstrap
+
+      - run: npm run build
+        working-directory: ./packages/[name]
+
+      - run: tar -cvzf [name].tar.gz package.json dist
+        working-directory: ./packages/[name]
+
+      - working-directory: ./packages/[name]
+        run: |
+          SUM=`sha256sum [name].tar.gz`
+          echo $SUM > checksum.txt
+
+      - run: tar -cvzf build.tar.gz [name].tar.gz CHANGELOG.md checksum.txt
+        working-directory: ./packages/[name]
+
+      - working-directory: ./packages/[name]
+        uses: actions/upload-artifact@v2
+        with:
+          name: builds
+          path: build.tar.gz
+
+  release:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 14.x
+          registry-url: https://registry.npmjs.org/
+
+      - uses: actions/download-artifact@v2
+        with:
+          name: builds
+
+      - uses: softprops/action-gh-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          files: |
+            [name].tar.gz
+            checksum.txt
+            CHANGELOG.md
+
+      - run: tar -xvf build.tar.gz
+      - run: rm -rf [name].tar.gz checksum.txt CHANGELOG.md
+
+      - run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
