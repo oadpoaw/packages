@@ -7,3 +7,9 @@ test('Base64 Encode Decode', () => {
 
     expect(decoded).toBe(Message);
 });
+
+test('Base64 Class should throw an error when instantiate', () => {
+    expect(() => {
+        new Base64();
+    }).toThrow(Error);
+});
