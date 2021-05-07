@@ -9,6 +9,7 @@
         "pretty": false,
         "declaration": true,
         "esModuleInterop": true,
+        "experimentalDecorators": true,
         "resolveJsonModule": false,
         "allowUnreachableCode": false,
         "allowUnusedLabels": false
