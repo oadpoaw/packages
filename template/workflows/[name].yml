@@ -3,7 +3,7 @@ name: Release - [name]
 on:
   push:
     tags:
-      - "@oadpoaw/[name]@v*.*.*"
+      - "@oadpoaw/[name]@*.*.*"
 
 jobs:
   build:
