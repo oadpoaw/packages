@@ -1,5 +1,5 @@
 # [name]
 
 ```sh
-$ npm install @oadpoaw/[name]
+npm install @oadpoaw/[name]
 ```
