@@ -1,6 +1,17 @@
 name: Test
 
-on: [push, pull_request]
+on:
+  push:
+    branches: [main]
+    paths:
+      - packages/**/src/**
+      - packages/**/__tests__/**
+
+  pull_request:
+    branches: [main]
+    paths:
+      - packages/**/src/**
+      - packages/**/__tests__/**
 
 jobs:
   test:
