@@ -1,5 +1,4 @@
-{
-    "$schema": "https://json.schemastore.org/babelrc",
+module.exports = {
     "parserOpts": {
         "strictMode": true
     },
