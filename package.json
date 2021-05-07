@@ -56,6 +56,34 @@
       "prettier --write"
     ]
   },
+  "babel": {
+    "parserOpts": {
+      "strictMode": true
+    },
+    "sourceMaps": "inline",
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "targets": {
+            "node": "current"
+          },
+          "modules": "commonjs"
+        }
+      ],
+      "@babel/preset-react",
+      "@babel/preset-typescript"
+    ],
+    "plugins": [
+      "babel-plugin-transform-typescript-metadata",
+      [
+        "@babel/plugin-proposal-decorators",
+        {
+          "legacy": true
+        }
+      ]
+    ]
+  },
   "commitlint": {
     "extends": [
       "@commitlint/config-angular"
