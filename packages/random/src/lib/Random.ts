@@ -6,14 +6,8 @@ const defaults = {
     ],
 };
 
-export class Random {
-    constructor() {
-        throw new Error(
-            `The '${this.constructor.name}' class cannot be instantiated.`,
-        );
-    }
-
-    static number(max: number = defaults.max, min: number = defaults.min) {
+export const Random = {
+    number: (max: number = defaults.max, min: number = defaults.min) => {
         if (typeof max !== 'number')
             throw new TypeError(
                 `Random.number(max, min): 'max' should be a number.`,
@@ -30,9 +24,8 @@ export class Random {
             );
 
         return Math.floor(Math.random() * (max - min + 1) + min);
-    }
-
-    static string(length = 10, chars: string[] = defaults.chars) {
+    },
+    string: (length = 10, chars: string[] = defaults.chars) => {
         if (typeof length !== 'number')
             throw new TypeError(
                 `Random.string(length, chars): 'length' should be a number.`,
@@ -59,5 +52,5 @@ export class Random {
         return [...Array(length)]
             .map(() => chars[Math.floor(Math.random() * chars.length)])
             .join('');
-    }
-}
+    },
+};
