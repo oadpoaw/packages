@@ -17,7 +17,12 @@
         "url": "https://github.com/oadpoaw/packages/issues"
     },
     "homepage": "https://github.com/oadpoaw/packages/tree/main/packages/react-sensor#readme",
-    "keywords": [],
+    "keywords": [
+        "react",
+        "sensor",
+        "visibility",
+        "scroll"
+    ],
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
     "engines": {

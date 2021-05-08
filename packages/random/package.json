@@ -17,7 +17,12 @@
         "url": "https://github.com/oadpoaw/packages/issues"
     },
     "homepage": "https://github.com/oadpoaw/packages/tree/main/packages/random#readme",
-    "keywords": [],
+    "keywords": [
+        "number",
+        "string",
+        "random",
+        "generator"
+    ],
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
     "engines": {
