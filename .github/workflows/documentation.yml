@@ -34,7 +34,7 @@ jobs:
           ref: gh-pages
           path: docs
 
-      - run: cp ./main/docs/* docs
+      - run: cp ./main/docs/* docs -r
       - run: cp ./main/README.md docs -f
       - run: cp ./main/LICENSE docs -f
 
