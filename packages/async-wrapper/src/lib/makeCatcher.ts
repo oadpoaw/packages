@@ -4,7 +4,7 @@ import type { HTTPError } from './HTTPError';
 export function makeCatcher(
     Logger: { error: (err: any) => any } | false = false,
 ) {
-    return function (
+    return function Catcher(
         err: HTTPError,
         _req: Request,
         res: Response,
@@ -14,15 +14,12 @@ export function makeCatcher(
 
         res.status(err.status ?? 404);
 
+        const error = process.env.NODE_ENV === 'production' ? null : err;
+
         if (!res.headersSent) {
             res.json({
                 message: err.message ?? 'Not Found',
-                error:
-                    process.env.NODE_ENV === 'production'
-                        ? !err
-                            ? {}
-                            : err
-                        : null,
+                error,
             });
         }
     };
