@@ -1,5 +1,5 @@
 # trim-array
-Trim an array.
+Trim an Array.
 
 ```sh
 npm install @oadpoaw/trim-array

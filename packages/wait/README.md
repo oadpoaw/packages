@@ -1,5 +1,5 @@
 # wait
-Wait.
+setTimeout but it's async.
 
 ```sh
 npm install @oadpoaw/wait
