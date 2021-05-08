@@ -5,9 +5,10 @@
     "prepare": "husky install .github/husky",
     "bootstrap": "lerna bootstrap",
     "clean": "rimraf packages/**/dist packages/**/node_modules/.cache",
-    "build": "lerna run build --parallel",
-    "test": "jest --collect-coverage",
-    "test:ci": "jest --verbose --ci --no-stack-trace",
+    "build": "lerna run build",
+    "pretest": "rimraf coverage",
+    "test": "jest --collect-coverage --config ./config/jest.config.js",
+    "test:ci": "jest --verbose --ci --no-stack-trace --config ./config/jest.config.js",
     "format": "prettier --write \"packages/**/*.{ts,tsx}\"",
     "lint": "eslint packages --ext ts,tsx --fix",
     "docs": "typedoc --options ./config/typedoc.json",
@@ -35,6 +36,7 @@
     "@sapphire/ts-config": "^2.2.1",
     "@types/jest": "^26.0.23",
     "babel-jest": "^26.3.0",
+    "babel-plugin-module-resolver": "^4.1.0",
     "babel-plugin-transform-typescript-metadata": "^0.3.0",
     "eslint": "^7.26.0",
     "eslint-config-prettier": "^8.3.0",
@@ -88,33 +90,15 @@
         {
           "legacy": true
         }
+      ],
+      [
+        "module-resolver",
+        {
+          "alias": {
+            "^@oadpoaw/(.+)": "../\\1/src"
+          }
+        }
       ]
-    ]
-  },
-  "jest": {
-    "testMatch": [
-      "**/+(*.)+(spec|test).+(ts|js)?(x)"
-    ],
-    "preset": "ts-jest",
-    "testEnvironment": "node",
-    "collectCoverage": true,
-    "coverageProvider": "v8",
-    "coverageDirectory": "coverage",
-    "coverageReporters": [
-      "text",
-      "clover"
-    ],
-    "coverageThreshold": {
-      "global": {
-        "branches": 80,
-        "functions": 80,
-        "lines": 80,
-        "statements": 80,
-        "ts-jest": {}
-      }
-    },
-    "roots": [
-      "<rootDir>packages/"
     ]
   },
   "commitlint": {
