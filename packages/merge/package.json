@@ -17,7 +17,13 @@
         "url": "https://github.com/oadpoaw/packages/issues"
     },
     "homepage": "https://github.com/oadpoaw/packages/tree/main/packages/merge#readme",
-    "keywords": [],
+    "keywords": [
+        "merge",
+        "merging",
+        "object",
+        "objects",
+        "assign"
+    ],
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
     "engines": {

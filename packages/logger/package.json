@@ -17,7 +17,11 @@
         "url": "https://github.com/oadpoaw/packages/issues"
     },
     "homepage": "https://github.com/oadpoaw/packages/tree/main/packages/logger#readme",
-    "keywords": [],
+    "keywords": [
+        "logger",
+        "logging",
+        "winston"
+    ],
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
     "engines": {
