@@ -18,6 +18,7 @@
         "packages/merge/src/index.ts",
         "packages/wait/src/index.ts",
         "packages/trim-array/src/index.ts",
-        "packages/shorten/src/index.ts"
+        "packages/shorten/src/index.ts",
+        "packages/human-readable/src/index.ts"
     ]
 }
