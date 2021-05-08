@@ -6,9 +6,9 @@ const defaults = {
 
 export function ProgressBar(
     percent: number,
-    padding: number = defaults.padding,
-    block: string = defaults.block,
-    padblock: string = defaults.padBlock,
+    padding: number | null = defaults.padding,
+    block: string | null = defaults.block,
+    padblock: string | null = defaults.padBlock,
 ): string {
     if (typeof percent !== 'number')
         throw new RangeError(
