@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.2.0](https://github.com/oadpoaw/packages/compare/@oadpoaw/merge@1.1.1...@oadpoaw/merge@1.2.0) (2021-05-08)
+
+
+### Features
+
+* keywords ([130a109](https://github.com/oadpoaw/packages/commit/130a109de4f52048e29338ac7b6eb9d9c0ec1157))
+
+
+
+
+
 ## [1.1.1](https://github.com/oadpoaw/packages/compare/@oadpoaw/merge@1.1.0...@oadpoaw/merge@1.1.1) (2021-05-08)
 
 
