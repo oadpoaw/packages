@@ -10,6 +10,10 @@ export class Escapes {
      * So special characters would not error out regex parsing
      */
     static regex(str: string) {
+        if (typeof str !== 'string')
+            throw new TypeError(
+                `Escapes.regex(str): 'str' should be a string.`,
+            );
         return str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
     }
 
@@ -17,6 +21,10 @@ export class Escapes {
      * Escapes the character `@` address sign
      */
     static addressSign(str: string) {
+        if (typeof str !== 'string')
+            throw new TypeError(
+                `Escapes.regex(str): 'str' should be a string.`,
+            );
         return str.replace(/@/g, '@' + String.fromCharCode(8203));
     }
 
@@ -24,6 +32,10 @@ export class Escapes {
      * Escapes the character ` backtick
      */
     static backticks(str: string) {
+        if (typeof str !== 'string')
+            throw new TypeError(
+                `Escapes.regex(str): 'str' should be a string.`,
+            );
         return str.replace(/`/g, '`' + String.fromCharCode(8203));
     }
 }

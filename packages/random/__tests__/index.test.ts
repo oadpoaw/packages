@@ -31,3 +31,31 @@ test('Random String with Selected Characters', () => {
     const str = Random.string(length, chars);
     expect(chars).toEqual(expect.arrayContaining([...str]));
 });
+
+test('run constraints and type checking', () => {
+    expect(() => {
+        //@ts-expect-error
+        Random.number('11');
+    }).toThrow(`'max' should be a number.`);
+    expect(() => {
+        //@ts-expect-error
+        Random.number(1, '');
+    }).toThrow(`'min' should be a number`);
+    expect(() => {
+        Random.number(1, 2);
+    }).toThrow(`'min' cannot be greater than or equal to 'max'.`);
+    expect(() => {
+        //@ts-expect-error
+        Random.string('');
+    }).toThrow(`'length' should be a number.`);
+    expect(() => {
+        //@ts-expect-error
+        Random.string(11, [1231]);
+    }).toThrow(`'chars' should be an array of strings.`);
+    expect(() => {
+        Random.string(-1);
+    }).toThrow(`'length' cannot be less than or equal to 0.`);
+    expect(() => {
+        Random.string(10, []);
+    }).toThrow(`'chars' cannot be empty.`);
+});

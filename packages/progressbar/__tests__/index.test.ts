@@ -12,17 +12,21 @@ test('Padding Matcher', () => {
 
 test('Should throw errors', () => {
     expect(() => {
+        //@ts-expect-error
+        ProgressBar('');
+    }).toThrow(`'percent' should be a number.`);
+    expect(() => {
         ProgressBar(0);
-    }).not.toThrow(Error);
+    }).not.toThrow(`'percent' should not be greater than 100 or less than 0.`);
     expect(() => {
         ProgressBar(100);
-    }).not.toThrow(Error);
+    }).not.toThrow(`'percent' should not be greater than 100 or less than 0.`);
     expect(() => {
         ProgressBar(-1);
-    }).toThrow(Error);
+    }).toThrow(`'percent' should not be greater than 100 or less than 0.`);
     expect(() => {
         ProgressBar(101);
-    }).toThrow(Error);
+    }).toThrow(`'percent' should not be greater than 100 or less than 0.`);
 });
 
 test('bloated coverage', () => {

@@ -7,12 +7,10 @@ test('Simple Trim', () => {
     const arr = new Array(5)
         .fill(0)
         .map((_) => Math.floor(Math.random() * 100) + 100);
-
     expect(TrimArray(array).length).toBe(11);
     expect(TrimArray(arr).length).toBe(5);
     expect(TrimArray(arr)).toEqual(arr);
     expect(TrimArray(array, 2).length).toBe(3);
-
     expect(() => {
         //@ts-expect-error
         TrimArray(12312);

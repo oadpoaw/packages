@@ -1,12 +1,19 @@
 import processor from '../src';
 
-test('Should work properly', () => {
+test('processor', () => {
     expect(() => {
-        processor(console);
-    }).not.toThrow();
-});
-
-test('Should throw an error', () => {
+        //@ts-expect-error
+        processor(0);
+    }).toThrow(`'logger' should be an object.`);
+    expect(() => {
+        //@ts-expect-error
+        processor({});
+    }).toThrow(`'logger.error' should be a function.`);
+    expect(() => {
+        //@ts-expect-error
+        processor({ error: () => {} });
+    }).toThrow(`logger.warn' should be a function.`);
+    processor(console);
     expect(() => {
         processor(console);
     }).toThrow(Error);

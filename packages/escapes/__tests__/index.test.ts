@@ -14,3 +14,18 @@ test('Should not throw any errors', () => {
         new RegExp(str);
     }).not.toThrow();
 });
+
+test('type checking', () => {
+    expect(() => {
+        //@ts-expect-error
+        Escapes.regex(12);
+    }).toThrow(`'str' should be a string.`);
+    expect(() => {
+        //@ts-expect-error
+        Escapes.addressSign(12);
+    }).toThrow(`'str' should be a string.`);
+    expect(() => {
+        //@ts-expect-error
+        Escapes.backticks(12);
+    }).toThrow(`'str' should be a string.`);
+});

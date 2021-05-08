@@ -6,9 +6,22 @@ export interface Logger {
 let hasBeenCalled = false;
 
 export function processor(logger: Logger) {
+    if (typeof logger !== 'object')
+        throw new TypeError(`processor(logger): 'logger' should be an object.`);
+
+    if (typeof logger.error !== 'function')
+        throw new TypeError(
+            `processor(logger): 'logger.error' should be a function.`,
+        );
+
+    if (typeof logger.warn !== 'function')
+        throw new TypeError(
+            `processor(logger): 'logger.warn' should be a function.`,
+        );
+
     if (hasBeenCalled)
         throw new Error(
-            `processor(...) has already been called and it cannot be called twice or more`,
+            `processor(logger): Already been called and it cannot be called twice or more.`,
         );
 
     process.on('uncaughtException', (err) => {

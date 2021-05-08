@@ -13,6 +13,11 @@ export function Sensor(props: {
     children: ReactNode;
     once?: boolean;
 }) {
+    if (typeof props.onChange !== 'function')
+        throw new TypeError(
+            `Sensor(props): 'props.onChange' should be a function.`,
+        );
+
     const ref = createRef<Element>();
 
     const [trigger, setTrigger] = useState(false);
