@@ -14,5 +14,7 @@ export function StringChunk(str: string, size: number): string[] {
             `StringChunk(str, size): 'size' should be greater than 1.`,
         );
 
-    return str.match(new RegExp(`(.|[\r\n]){1,${size}}`, 'g'));
+    const chunks = str.match(new RegExp(`(.|[\r\n]){1,${size}}`, 'g'));
+
+    return chunks ? chunks : [];
 }
