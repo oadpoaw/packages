@@ -1,7 +1,7 @@
 {
     "$schema": "http://json.schemastore.org/package",
     "name": "@oadpoaw/react-sensor",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "description": "React Element Visibility Sensor",
     "license": "Apache-2.0",
     "scripts": {

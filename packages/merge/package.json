@@ -1,7 +1,7 @@
 {
     "$schema": "http://json.schemastore.org/package",
     "name": "@oadpoaw/merge",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "Deep Merge objects or plain objects",
     "license": "Apache-2.0",
     "scripts": {
