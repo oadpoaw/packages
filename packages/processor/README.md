@@ -1,5 +1,5 @@
 # processor
-Add a logger on process listeners. For Errors.
+Add a logger on process listeners.
 
 ```sh
 npm install @oadpoaw/processor
