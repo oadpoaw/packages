@@ -1,7 +1,7 @@
 {
     "$schema": "http://json.schemastore.org/package",
     "name": "@oadpoaw/random",
-    "version": "1.4.0",
+    "version": "1.4.1",
     "description": "Generate a random string/number.",
     "license": "Apache-2.0",
     "scripts": {
