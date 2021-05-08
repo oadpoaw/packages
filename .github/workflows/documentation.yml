@@ -29,12 +29,14 @@ jobs:
           npm run test
           npm run docs
 
-      - run: cp ./main/docs/* docs
-
       - uses: actions/checkout@v2
         with:
           ref: gh-pages
           path: docs
+
+      - run: cp ./main/docs/* docs
+      - run: cp ./main/README.md docs -f
+      - run: cp ./main/LICENSE docs -f
 
       - working-directory: docs
         run: |
