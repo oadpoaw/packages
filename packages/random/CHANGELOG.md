@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.3.0](https://github.com/oadpoaw/packages/compare/@oadpoaw/random@1.2.0...@oadpoaw/random@1.3.0) (2021-05-08)
+
+
+### Features
+
+* keywords ([296eb5f](https://github.com/oadpoaw/packages/commit/296eb5f2d393427cc9c5ec37890a668af1c8afff))
+
+
+
+
+
 # [1.2.0](https://github.com/oadpoaw/packages/compare/@oadpoaw/random@1.1.2...@oadpoaw/random@1.2.0) (2021-05-08)
 
 
