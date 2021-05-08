@@ -1,4 +1,12 @@
 export function TrimArray(array: any[], maxLen: number = 10): any[] {
+    if (!Array.isArray(array))
+        throw new TypeError(
+            `TrimArray(array, maxLen): 'array' should be an array.`,
+        );
+    if (typeof maxLen !== 'number')
+        throw new TypeError(
+            `TrimArray(array, maxLen): 'maxLen' should be a number.`,
+        );
     if (array.length < maxLen) {
         return array;
     }
