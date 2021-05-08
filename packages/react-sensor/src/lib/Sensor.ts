@@ -8,7 +8,7 @@ import {
 } from 'react';
 import type { ReactNode } from 'react';
 
-export default function Sensor(props: {
+export function Sensor(props: {
     onChange: (visible: boolean) => any;
     children: ReactNode;
     once?: boolean;

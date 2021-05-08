@@ -1,2 +1,2 @@
-import Sensor from './Sensor';
+import { Sensor } from './lib/Sensor';
 export default Sensor;
