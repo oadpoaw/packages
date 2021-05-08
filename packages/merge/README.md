@@ -1,5 +1,5 @@
 # merge
-Deep Merge objects or plain objects.
+Deep Merge objects or two plain objects.
 
 ```sh
 npm install @oadpoaw/merge
