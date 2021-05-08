@@ -13,6 +13,7 @@
         "packages/logger/src/index.ts",
         "packages/processor/src/index.ts",
         "packages/progressbar/src/index.ts",
-        "packages/random/src/index.ts"
+        "packages/random/src/index.ts",
+        "packages/react-sensor/src/index.ts"
     ]
 }
