@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.4.2](https://github.com/oadpoaw/packages/compare/@oadpoaw/react-sensor@1.4.1...@oadpoaw/react-sensor@1.4.2) (2021-05-08)
+
+
+### Bug Fixes
+
+* tsconfig ([0933230](https://github.com/oadpoaw/packages/commit/09332301b0abf4b7c03f5ac9066eef6a2f32a2d0))
+
+
+
+
+
 ## [1.4.1](https://github.com/oadpoaw/packages/compare/@oadpoaw/react-sensor@1.4.0...@oadpoaw/react-sensor@1.4.1) (2021-05-08)
 
 **Note:** Version bump only for package @oadpoaw/react-sensor
