@@ -1,7 +1,7 @@
 {
     "tsconfig": "./config/tsconfig.docs.json",
-    "out": "./docs/",
-    "readme": "./README.md",
+    "out": "../docs/",
+    "readme": "../README.md",
     "name": "oadpoaw packages",
 	"mode": "modules",
 	"excludeExternals": true,
