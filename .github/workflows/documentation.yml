@@ -5,7 +5,9 @@ on:
     branches: [main]
     paths:
       - packages/**/src/**
-      - typedoc.json
+      - packages/**/*.md
+      - ./config/typedoc.json
+      - ./config/tsconfig.docs.json
       - README.md
       - .github/workflows/documentation.yml
 
