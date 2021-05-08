@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.3.0](https://github.com/oadpoaw/packages/compare/@oadpoaw/base64@1.2.0...@oadpoaw/base64@1.3.0) (2021-05-08)
+
+
+### Features
+
+* keywords ([abe3c76](https://github.com/oadpoaw/packages/commit/abe3c76a271e6162e46c43362971406e8cfca792))
+
+
+
+
+
 # [1.2.0](https://github.com/oadpoaw/packages/compare/@oadpoaw/base64@1.1.3...@oadpoaw/base64@1.2.0) (2021-05-08)
 
 
