@@ -24,5 +24,6 @@
 [![npm](https://img.shields.io/npm/v/@oadpoaw/shorten?color=blue&logo=npm&style=flat-square&label=@oadpoaw/shorten)](https://www.npmjs.com/package/@oadpoaw/shorten)
 [![npm](https://img.shields.io/npm/v/@oadpoaw/human-readable?color=blue&logo=npm&style=flat-square&label=@oadpoaw/human-readable)](https://www.npmjs.com/package/@oadpoaw/human-readable)
 [![npm](https://img.shields.io/npm/v/@oadpoaw/string-chunk?color=blue&logo=npm&style=flat-square&label=@oadpoaw/string-chunk)](https://www.npmjs.com/package/@oadpoaw/string-chunk)
+[![npm](https://img.shields.io/npm/v/@oadpoaw/string-shuffle?color=blue&logo=npm&style=flat-square&label=@oadpoaw/string-shuffle)](https://www.npmjs.com/package/@oadpoaw/string-shuffle)
 
 </div>
