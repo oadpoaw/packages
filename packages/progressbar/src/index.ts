@@ -1,3 +1,2 @@
-import { ProgressBar, defaults } from './lib/ProgressBar';
+import { ProgressBar } from './lib/ProgressBar';
 export default ProgressBar;
-export { defaults };

@@ -1,13 +1,13 @@
-import ProgressBar, { defaults } from '../src/';
+import ProgressBar from '../src/';
 
 test('Random Matcher', () => {
     const percent = Math.floor(Math.random() * 100);
-    expect(ProgressBar(percent)).toBe(ProgressBar(percent));
+    expect(ProgressBar(percent)).toStrictEqual(ProgressBar(percent));
 });
 
 test('Padding Matcher', () => {
     const padding = Math.floor(Math.random() * 100);
-    expect(ProgressBar(50, padding).length).toStrictEqual(padding);
+    expect(ProgressBar(50, padding).length).toBe(padding);
 });
 
 test('Should throw errors', () => {
@@ -25,11 +25,8 @@ test('Should throw errors', () => {
     }).toThrow(Error);
 });
 
-test('Randomize Matching with defaults', () => {
+test('bloated coverage', () => {
     const percent = Math.floor(Math.random() * 100);
-    const padding = Math.floor(Math.random() * 100);
-    const progressbar = ProgressBar(percent, padding, null, null);
-    expect(progressbar.length).toStrictEqual(padding);
-    expect(progressbar).toContain(defaults.block);
-    expect(progressbar).toContain(defaults.padBlock);
+    const progressbar = ProgressBar(percent, null, null, null);
+    expect(progressbar.length).toBe(10);
 });

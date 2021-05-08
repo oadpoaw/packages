@@ -1,4 +1,4 @@
-export const defaults = {
+const defaults = {
     padding: 10,
     block: '■',
     padBlock: '□',
