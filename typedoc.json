@@ -1,0 +1,18 @@
+{
+    "out": "./docs/",
+    "readme": "./README.md",
+    "name": "oadpoaw packages",
+    "tsconfig": "./tsconfig.json",
+    "entryPoints": [
+        "packages/array-chunk/src/index.ts",
+        "packages/array-shuffle/src/index.ts",
+        "packages/async-wrapper/src/index.ts",
+        "packages/base64/src/index.ts",
+        "packages/differentiate/src/index.ts",
+        "packages/escapes/src/index.ts",
+        "packages/logger/src/index.ts",
+        "packages/processor/src/index.ts",
+        "packages/progressbar/src/index.ts",
+        "packages/random/src/index.ts"
+    ]
+}

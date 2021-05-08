@@ -1,0 +1,50 @@
+name: Documentation
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - packages/**/src/**
+      - typedoc.json
+      - README.md
+      - documentation.yml
+
+jobs:
+  docs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          path: main
+
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 14.x
+
+      - working-directory: main
+        run: |
+          npm ci
+          npm run lint
+          npm run bootstrap
+          npm run test
+          npm run docs
+
+      - run: cp ./main/docs/* docs
+
+      - uses: actions/checkout@v2
+        with:
+          ref: gh-pages
+          path: docs
+
+      - working-directory: docs
+        run: |
+          echo "" >> .nojekyll
+          echo "packages.oadpoaw.xyz" >> CNAME
+
+      - working-directory: docs
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add .
+          git commit -m "generated docs"
+          git push
