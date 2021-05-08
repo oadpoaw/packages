@@ -7,7 +7,7 @@ on:
       - packages/**/src/**
       - typedoc.json
       - README.md
-      - documentation.yml
+      - .github/workflows/documentation.yml
 
 jobs:
   docs:
