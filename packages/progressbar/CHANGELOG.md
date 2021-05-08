@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.4.1](https://github.com/oadpoaw/packages/compare/@oadpoaw/progressbar@1.4.0...@oadpoaw/progressbar@1.4.1) (2021-05-08)
+
+
+### Bug Fixes
+
+* progressbar ([1800240](https://github.com/oadpoaw/packages/commit/1800240baec394394a328ca199842d254e2abdfa))
+
+
+
+
+
 # [1.4.0](https://github.com/oadpoaw/packages/compare/@oadpoaw/progressbar@1.3.0...@oadpoaw/progressbar@1.4.0) (2021-05-08)
 
 
