@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.3.0](https://github.com/oadpoaw/packages/compare/@oadpoaw/differentiate@1.2.0...@oadpoaw/differentiate@1.3.0) (2021-05-08)
+
+
+### Features
+
+* keywords ([124254d](https://github.com/oadpoaw/packages/commit/124254de08cc3781ee011c0ab12de3dbbab7d971))
+
+
+
+
+
 # [1.2.0](https://github.com/oadpoaw/packages/compare/@oadpoaw/differentiate@1.1.2...@oadpoaw/differentiate@1.2.0) (2021-05-08)
 
 
