@@ -29,7 +29,12 @@ jobs:
           yarn lint
           yarn bootstrap
           yarn test:ci
-          yarn docs
+
+      - working-directory: main/packages/string-shuffle
+        run: yarn install
+
+      - working-directory: main
+        run: yarn docs
 
       - uses: actions/checkout@v2
         with:
