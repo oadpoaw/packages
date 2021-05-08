@@ -10,18 +10,6 @@ test('Padding Matcher', () => {
     expect(ProgressBar(50, padding).length).toStrictEqual(padding);
 });
 
-test('Block Matcher', () => {
-    const percent = Math.floor(Math.random() * 100);
-    const block = 'X';
-    expect(ProgressBar(percent, null, block)).toContain(block);
-});
-
-test('Pad Block Matcher', () => {
-    const percent = Math.floor(Math.random() * 100);
-    const padblock = 'O';
-    expect(ProgressBar(percent, null, null, padblock)).toContain(padblock);
-});
-
 test('Should throw errors', () => {
     expect(() => {
         ProgressBar(0);
