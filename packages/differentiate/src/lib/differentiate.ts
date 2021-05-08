@@ -9,5 +9,5 @@ export function differentiate<T>(array_1: T[], array_2: T[]): T[] {
             `differentiate(array_1, array_2): 'array_2' should be an array.`,
         );
 
-    return array_1.filter((i) => array_2.indexOf(i) < 0);
+    return array_1.filter((i) => !array_2.includes(i));
 }

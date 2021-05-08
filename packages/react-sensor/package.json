@@ -5,7 +5,6 @@
     "description": "React Element Visibility Sensor",
     "license": "Apache-2.0",
     "scripts": {
-        "clean": "rimraf dist",
         "build": "tsc --project tsconfig.json",
         "test": "echo \"Run tests from root\" && exit 1"
     },

@@ -12,7 +12,7 @@ test('Padding Matcher', () => {
 
 test('Should throw errors', () => {
     expect(() => {
-        //@ts-expect-error
+        // @ts-expect-error
         ProgressBar('');
     }).toThrow(`'percent' should be a number.`);
     expect(() => {

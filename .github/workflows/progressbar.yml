@@ -16,11 +16,11 @@ jobs:
 
       - run: npm ci
 
-      - run: npm run lint
-      - run: npm run bootstrap
-      - run: npm run test:ci
+      - run: yarn lint
+      - run: yarn bootstrap
+      - run: yarn test:ci
 
-      - run: npm run build
+      - run: yarn build
         working-directory: ./packages/progressbar
 
       - run: tar -cvzf build.tar.gz package.json dist README.md CHANGELOG.md

@@ -13,11 +13,11 @@ test('string chunking', () => {
 
 test('type/range errors', () => {
     expect(() => {
-        //@ts-expect-error
+        // @ts-expect-error
         StringChunk(0);
     }).toThrow(`'str' should be a string.`);
     expect(() => {
-        //@ts-expect-error
+        // @ts-expect-error
         StringChunk('', '');
     }).toThrow(`'size' should be a number.`);
     expect(() => {

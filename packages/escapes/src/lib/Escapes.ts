@@ -25,7 +25,7 @@ export class Escapes {
             throw new TypeError(
                 `Escapes.regex(str): 'str' should be a string.`,
             );
-        return str.replace(/@/g, '@' + String.fromCharCode(8203));
+        return str.replace(/@/g, `@${String.fromCharCode(8203)}`);
     }
 
     /**
@@ -36,6 +36,6 @@ export class Escapes {
             throw new TypeError(
                 `Escapes.regex(str): 'str' should be a string.`,
             );
-        return str.replace(/`/g, '`' + String.fromCharCode(8203));
+        return str.replace(/`/g, `\`${String.fromCharCode(8203)}`);
     }
 }

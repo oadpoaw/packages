@@ -1,4 +1,4 @@
-export function shorten(text: string, maxLen: number = 2000) {
+export function shorten(text: string, maxLen = 2000) {
     if (typeof text !== 'string')
         throw new TypeError(
             `shorten(text, maxLen): 'text' should be a string.`,

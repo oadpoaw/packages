@@ -1,4 +1,4 @@
-export function HumanReadable(n: number, separator: string = ',') {
+export function HumanReadable(n: number, separator = ',') {
     if (typeof n !== 'number')
         throw new TypeError(
             `HumanReadable(n, separator): 'n' should be a number.`,

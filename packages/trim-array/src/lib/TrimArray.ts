@@ -1,4 +1,4 @@
-export function TrimArray(array: any[], maxLen: number = 10): any[] {
+export function TrimArray(array: any[], maxLen = 10): any[] {
     if (!Array.isArray(array))
         throw new TypeError(
             `TrimArray(array, maxLen): 'array' should be an array.`,

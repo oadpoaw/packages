@@ -32,7 +32,7 @@ export class Random {
         return Math.floor(Math.random() * (max - min + 1) + min);
     }
 
-    static string(length: number = 10, chars: string[] = defaults.chars) {
+    static string(length = 10, chars: string[] = defaults.chars) {
         if (typeof length !== 'number')
             throw new TypeError(
                 `Random.string(length, chars): 'length' should be a number.`,

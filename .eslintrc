@@ -1,0 +1,13 @@
+{
+	"extends": "@sapphire",
+	"overrides": [
+		{
+			"files": [
+				"packages/**/__tests__/*.test.ts"
+			],
+			"rules": {
+				"@typescript-eslint/no-extraneous-class": 0
+			}
+		}
+	]
+}
