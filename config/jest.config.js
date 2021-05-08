@@ -14,11 +14,6 @@ module.exports = {
     collectCoverage: true,
     coverageProvider: 'v8',
     coverageDirectory: '../coverage',
-    coverageReporters: [
-        'text',
-        'lcov',
-        'clover'
-    ],
     coverageThreshold: {
         global: {
             'branches': 80,

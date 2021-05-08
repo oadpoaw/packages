@@ -2,9 +2,6 @@ import Random from '../src';
 
 test('Random', () => {
     expect(() => {
-        new Random();
-    }).toThrow();
-    expect(() => {
         Random.number();
     }).not.toThrow();
     expect(() => {
@@ -34,22 +31,22 @@ test('Random String with Selected Characters', () => {
 
 test('run constraints and type checking', () => {
     expect(() => {
-        // @ts-expect-error
+        // @ts-expect-error Testing Purposes
         Random.number('11');
     }).toThrow(`'max' should be a number.`);
     expect(() => {
-        // @ts-expect-error
+        // @ts-expect-error Testing Purposes
         Random.number(1, '');
     }).toThrow(`'min' should be a number`);
     expect(() => {
         Random.number(1, 2);
     }).toThrow(`'min' cannot be greater than or equal to 'max'.`);
     expect(() => {
-        // @ts-expect-error
+        // @ts-expect-error Testing Purposes
         Random.string('');
     }).toThrow(`'length' should be a number.`);
     expect(() => {
-        // @ts-expect-error
+        // @ts-expect-error Testing Purposes
         Random.string(11, [1231]);
     }).toThrow(`'chars' should be an array of strings.`);
     expect(() => {

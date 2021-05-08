@@ -18,7 +18,7 @@ test('Shuffled array should be equal as the original array size', () => {
 
 test('should throw an error', () => {
     expect(() => {
-        // @ts-expect-error
+        // @ts-expect-error Testing Purposes
         ArrayShuffle(12313);
     }).toThrowError(TypeError);
 });

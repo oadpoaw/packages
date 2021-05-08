@@ -6,11 +6,11 @@ test('Chunk an array with sum of chunks is 5', () => {
 
 test('type checking and constraints', () => {
     expect(() => {
-        // @ts-expect-error
+        // @ts-expect-error Testing Purposes
         ArrayChunk(1234);
     }).toThrow(`'array' should be an array.`);
     expect(() => {
-        // @ts-expect-error
+        // @ts-expect-error Testing Purposes
         ArrayChunk([], '');
     }).toThrow(`'size' should be number.`);
     expect(() => {

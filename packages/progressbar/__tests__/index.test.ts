@@ -6,13 +6,13 @@ test('Random Matcher', () => {
 });
 
 test('Padding Matcher', () => {
-    const padding = Math.floor(Math.random() * 100);
+    const padding = Math.floor(Math.random() * 100 + 10);
     expect(ProgressBar(50, padding).length).toBe(padding);
 });
 
 test('Should throw errors', () => {
     expect(() => {
-        // @ts-expect-error
+        // @ts-expect-error Testing Purposes
         ProgressBar('');
     }).toThrow(`'percent' should be a number.`);
     expect(() => {

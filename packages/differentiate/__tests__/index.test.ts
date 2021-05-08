@@ -11,11 +11,11 @@ test('Differentiate', () => {
 
 test('type checks', () => {
     expect(() => {
-        // @ts-expect-error
+        // @ts-expect-error Testing Purposes
         differentiate(1234, []);
     }).toThrow('array_1');
     expect(() => {
-        // @ts-expect-error
+        // @ts-expect-error Testing Purposes
         differentiate([], 1234);
     }).toThrow('array_2');
 });

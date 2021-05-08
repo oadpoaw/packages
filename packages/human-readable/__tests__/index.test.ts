@@ -11,11 +11,11 @@ test('make', () => {
 
 test('type errors', () => {
     expect(() => {
-        // @ts-expect-error
+        // @ts-expect-error Testing Purposes
         expect(HumanReadable(''));
     }).toThrow(`'n' should be a number.`);
     expect(() => {
-        // @ts-expect-error
+        // @ts-expect-error Testing Purposes
         expect(HumanReadable(123, 0));
     }).toThrow(`'separator' should be a string.`);
 });

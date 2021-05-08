@@ -10,7 +10,7 @@ test('should string shuffling', () => {
 
 test('should type error', () => {
     expect(() => {
-        // @ts-expect-error
+        // @ts-expect-error Testing Purposes
         StringShuffle(0);
     }).toThrow(`'str' should be a string.`);
 });

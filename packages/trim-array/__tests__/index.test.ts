@@ -12,12 +12,12 @@ test('Simple Trim', () => {
     expect(TrimArray(arr)).toEqual(arr);
     expect(TrimArray(array, 2).length).toBe(3);
     expect(() => {
-        // @ts-expect-error
+        // @ts-expect-error Testing Purposes
         TrimArray(12312);
     }).toThrow();
 
     expect(() => {
-        // @ts-expect-error
+        // @ts-expect-error Testing Purposes
         TrimArray([], '123');
     }).toThrow();
 });

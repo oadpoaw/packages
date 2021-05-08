@@ -45,11 +45,9 @@ test('simple merge', () => {
 
 test('should not merge if its not a plain object', () => {
     const obj = new Object();
-    const instance = new (class SomeClass {})();
     const str = '';
     const int = 1;
     expect(merge(obj, obj)).toEqual({});
-    expect(merge(instance, instance)).toEqual({});
     expect(merge(str, str)).toEqual({});
     expect(merge(int, int)).toEqual({});
 });
