@@ -5,11 +5,13 @@ on:
     branches: [main]
     paths:
       - packages/**
+      - .github/workflows/test.yml
 
   pull_request:
     branches: [main]
     paths:
       - packages/**
+      - .github/workflows/test.yml
 
 jobs:
   test:
@@ -19,7 +21,8 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 14.x
-      - run: npm ci
+
+      - run: yarn ci
       - run: yarn lint
       - run: yarn bootstrap
       - run: yarn test:ci

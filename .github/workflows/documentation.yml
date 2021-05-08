@@ -23,7 +23,7 @@ jobs:
 
       - working-directory: main
         run: |
-          npm ci
+          yarn ci
           yarn lint
           yarn bootstrap
           yarn test:ci
