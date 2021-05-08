@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.2.0](https://github.com/oadpoaw/packages/compare/@oadpoaw/shorten@1.1.0...@oadpoaw/shorten@1.2.0) (2021-05-08)
+
+
+### Features
+
+* keywords ([df22c97](https://github.com/oadpoaw/packages/commit/df22c9768b78594ba38790efd0a730ceaea3043b))
+
+
+
+
+
 # 1.1.0 (2021-05-08)
 
 
