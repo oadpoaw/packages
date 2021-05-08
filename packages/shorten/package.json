@@ -1,7 +1,7 @@
 {
     "$schema": "http://json.schemastore.org/package",
     "name": "@oadpoaw/shorten",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "Shorten a string at a given maximum length.",
     "license": "Apache-2.0",
     "scripts": {
@@ -24,6 +24,6 @@
         "node": ">=14.0.0"
     },
     "publishConfig": {
-        "access": "public"  
+        "access": "public"
     }
 }

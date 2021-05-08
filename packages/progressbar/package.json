@@ -1,7 +1,7 @@
 {
     "$schema": "http://json.schemastore.org/package",
     "name": "@oadpoaw/progressbar",
-    "version": "1.1.3",
+    "version": "1.2.0",
     "description": "Auto padding for text based progress bar.",
     "license": "Apache-2.0",
     "scripts": {

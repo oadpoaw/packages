@@ -1,7 +1,7 @@
 {
     "$schema": "http://json.schemastore.org/package",
     "name": "@oadpoaw/array-shuffle",
-    "version": "1.1.7",
+    "version": "1.2.0",
     "description": "Fast and Minimalist Array Shuffling",
     "license": "Apache-2.0",
     "scripts": {
