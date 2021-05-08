@@ -17,7 +17,12 @@
         "url": "https://github.com/oadpoaw/packages/issues"
     },
     "homepage": "https://github.com/oadpoaw/packages/tree/main/packages/progressbar#readme",
-    "keywords": [],
+    "keywords": [
+        "string",
+        "progress",
+        "bar",
+        "progressbar"
+    ],
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
     "engines": {
