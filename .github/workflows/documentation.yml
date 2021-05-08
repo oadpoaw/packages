@@ -31,7 +31,7 @@ jobs:
           yarn test:ci
 
       - working-directory: main/packages/string-shuffle
-        run: yarn install
+        run: npm install
 
       - working-directory: main
         run: yarn docs
