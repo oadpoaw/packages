@@ -19,6 +19,6 @@
 [![npm](https://img.shields.io/npm/v/@oadpoaw/random?color=blue&logo=npm&style=flat-square&label=@oadpoaw/random)](https://www.npmjs.com/package/@oadpoaw/random)
 [![npm](https://img.shields.io/npm/v/@oadpoaw/react-sensor?color=blue&logo=npm&style=flat-square&label=@oadpoaw/react-sensor)](https://www.npmjs.com/package/@oadpoaw/react-sensor)
 [![npm](https://img.shields.io/npm/v/@oadpoaw/merge?color=blue&logo=npm&style=flat-square&label=@oadpoaw/merge)](https://www.npmjs.com/package/@oadpoaw/merge)
-
+[![npm](https://img.shields.io/npm/v/@oadpoaw/wait?color=blue&logo=npm&style=flat-square&label=@oadpoaw/wait)](https://www.npmjs.com/package/@oadpoaw/wait)
 
 </div>
