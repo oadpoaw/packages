@@ -18,7 +18,7 @@
     "homepage": "https://github.com/oadpoaw/packages/tree/main/packages/string-chunk#readme",
     "keywords": [
         "string",
-        "split",
+        "spliting",
         "chunk"
     ],
     "main": "dist/index.js",
