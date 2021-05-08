@@ -2,7 +2,7 @@
     "$schema": "http://json.schemastore.org/package",
     "name": "@oadpoaw/base64",
     "version": "1.4.0",
-    "description": "Minimalist wrapper for the Buffer API just for base64 encode/decode",
+    "description": "Minimalist wrapper for the Buffer API just for base64 encode/decode.",
     "license": "Apache-2.0",
     "scripts": {
         "build": "tsc --project tsconfig.json",
