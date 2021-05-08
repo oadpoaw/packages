@@ -4,6 +4,7 @@
         "moduleResolution": "Node",
         "module": "commonjs",
         "target": "esnext",
+        "importsNotUsedAsValues": "error",
         "noImplicitAny": true,
         "sourceMap": true,
         "pretty": false,
