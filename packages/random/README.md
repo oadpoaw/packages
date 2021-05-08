@@ -1,5 +1,5 @@
 # random
-Generate random string/number.
+Generate a random string/number.
 
 ```sh
 npm install @oadpoaw/random

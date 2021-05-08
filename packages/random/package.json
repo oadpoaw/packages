@@ -2,7 +2,7 @@
     "$schema": "http://json.schemastore.org/package",
     "name": "@oadpoaw/random",
     "version": "1.4.0",
-    "description": "Generate random string/number.",
+    "description": "Generate a random string/number.",
     "license": "Apache-2.0",
     "scripts": {
         "build": "tsc --project tsconfig.json",
