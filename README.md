@@ -23,5 +23,6 @@
 [![npm](https://img.shields.io/npm/v/@oadpoaw/trim-array?color=blue&logo=npm&style=flat-square&label=@oadpoaw/trim-array)](https://www.npmjs.com/package/@oadpoaw/trim-array)
 [![npm](https://img.shields.io/npm/v/@oadpoaw/shorten?color=blue&logo=npm&style=flat-square&label=@oadpoaw/shorten)](https://www.npmjs.com/package/@oadpoaw/shorten)
 [![npm](https://img.shields.io/npm/v/@oadpoaw/human-readable?color=blue&logo=npm&style=flat-square&label=@oadpoaw/human-readable)](https://www.npmjs.com/package/@oadpoaw/human-readable)
+[![npm](https://img.shields.io/npm/v/@oadpoaw/string-chunk?color=blue&logo=npm&style=flat-square&label=@oadpoaw/string-chunk)](https://www.npmjs.com/package/@oadpoaw/string-chunk)
 
 </div>
