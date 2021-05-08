@@ -17,7 +17,12 @@
         "url": "https://github.com/oadpoaw/packages/issues"
     },
     "homepage": "https://github.com/oadpoaw/packages/tree/main/packages/differentiate#readme",
-    "keywords": [],
+    "keywords": [
+        "array",
+        "differentiate",
+        "difference",
+        "minus"
+    ],
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
     "engines": {

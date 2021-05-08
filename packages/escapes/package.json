@@ -17,7 +17,13 @@
         "url": "https://github.com/oadpoaw/packages/issues"
     },
     "homepage": "https://github.com/oadpoaw/packages/tree/main/packages/escapes#readme",
-    "keywords": [],
+    "keywords": [
+        "escapes",
+        "string",
+        "regex",
+        "address",
+        "backtick"
+    ],
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
     "engines": {
