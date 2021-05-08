@@ -1,0 +1,14 @@
+{
+    "tsconfig": "./config/tsconfig.docs.json",
+    "out": "./docs/",
+    "readme": "../README.md",
+    "name": "oadpoaw packages",
+	"mode": "modules",
+	"excludeExternals": true,
+	"excludeNotExported": true,
+	"stripInternal": true,
+    "exclude": [
+        "**/node_modules/**",
+        "**/*.test.ts"
+    ]
+}

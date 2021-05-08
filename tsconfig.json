@@ -1,18 +1,7 @@
 {
     "$schema": "https://json.schemastore.org/tsconfig",
+    "extends": "@sapphire/ts-config",
     "compilerOptions": {
-        "moduleResolution": "Node",
-        "module": "commonjs",
-        "target": "esnext",
-        "importsNotUsedAsValues": "error",
-        "noImplicitAny": true,
-        "sourceMap": true,
-        "pretty": false,
-        "declaration": true,
-        "esModuleInterop": true,
-        "experimentalDecorators": true,
-        "resolveJsonModule": false,
-        "allowUnreachableCode": false,
-        "allowUnusedLabels": false
+        "target": "ESNext"
     }
 }
