@@ -16,6 +16,7 @@
         "packages/random/src/index.ts",
         "packages/react-sensor/src/index.ts",
         "packages/merge/src/index.ts",
-        "packages/wait/src/index.ts"
+        "packages/wait/src/index.ts",
+        "packages/trim-array/src/index.ts"
     ]
 }
