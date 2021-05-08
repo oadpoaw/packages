@@ -17,7 +17,15 @@
         "url": "https://github.com/oadpoaw/packages/issues"
     },
     "homepage": "https://github.com/oadpoaw/packages/tree/main/packages/async-wrapper#readme",
-    "keywords": [],
+    "keywords": [
+        "async",
+        "wrapper",
+        "middleware",
+        "express",
+        "express.js",
+        "error",
+        "handling"
+    ],
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
     "engines": {

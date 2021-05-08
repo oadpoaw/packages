@@ -17,7 +17,11 @@
         "url": "https://github.com/oadpoaw/packages/issues"
     },
     "homepage": "https://github.com/oadpoaw/packages/tree/main/packages/base64#readme",
-    "keywords": [],
+    "keywords": [
+        "base64",
+        "encode",
+        "decode"
+    ],
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
     "engines": {
